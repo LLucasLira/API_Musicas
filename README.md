@@ -20,3 +20,5 @@ No código temos algumas funções como:
    - Filtra as músicas de acordo com um estilo musical específico.
   
 Além disso, o código faz uso da anotação "JsonPropertyName" para mapear os nomes das propriedades nos objetos JSON para os nomes das propriedades no código C#. Isso é especialmente útil quando os nomes das propriedades no JSON diferem dos nomes que você gostaria de usar em seu código.
+
+No geral, o uso do LINQ no C# oferece uma sintaxe elegante e eficaz para consultas e manipulação de dados, tornando o código mais legível, conciso e fácil de manter.
