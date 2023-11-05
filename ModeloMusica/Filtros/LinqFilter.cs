@@ -43,6 +43,16 @@ namespace ModeloMusica.Filtros
             }
         }
 
+        public static void FiltrarMusicasConformeArtista(List<Musica> _lstMusica, string _artista)
+        {
+            var oMusicaConformeArtista = _lstMusica.Where
+                (musica => musica.rArtista!.Equals(_artista)).Select
+                (musica => musica.rMusica).Distinct().ToList();
 
+            foreach (var musica in oMusicaConformeArtista)
+            {
+                Console.WriteLine("Musica: " + musica + " do artista: " + _artista);
+            }
+        }
     }
 }

@@ -29,6 +29,9 @@ try
 
             //FILTRAR ARTISTA DE ACORDO COM O ESTILO MUSICAL ESCOLHIDO
             LinqFilter.FiltrarArtistaConformeGenero(lstMusica, "pop");
+
+            //FILTRAR MUSICAS DE ACORDO COM A MUSICA ESCOLHIDA
+            LinqFilter.FiltrarMusicasConformeArtista(lstMusica, "Post Malone");
         }
     }
 }
