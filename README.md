@@ -4,13 +4,19 @@ Este é um projeto em C# que utiliza a biblioteca HttpClient para consultar uma 
 
 No código temos algumas funções como:
 
-1. **Exibir todas as informações de músicas:**
-   - Faz uma requisição à API de músicas e exibe os detalhes de todas as músicas.
+1. **Exibir detalhes de todas as músicas:**
+   - Faz uma requisição à API de músicas e exibe os detalhes de cada música.
 
-2. **Exibir todos os gêneros musicais:**
-   - Faz uma requisição à API de músicas e exibe os gêneros musicais de todas as músicas.
+2. **Exibir gêneros musicais distintos:**
+   - Utiliza LINQ para identificar os gêneros musicais únicos na lista de músicas.
 
-3. **Ordenar os artistas por nome:**
-   - Faz uma requisição à API de músicas, extrai os nomes dos artistas e os ordena alfabeticamente.
+3. **Exibir artistas distintos:**
+   - Utiliza LINQ para identificar os artistas únicos na lista de músicas.
+
+4. **Exibir artistas ordenados:**
+   - Utiliza LINQ para ordenar os artistas alfabeticamente e os exibe.
+
+5. **Filtrar músicas por estilo musical:**
+   - Filtra as músicas de acordo com um estilo musical específico.
   
 Além disso, o código faz uso da anotação "JsonPropertyName" para mapear os nomes das propriedades nos objetos JSON para os nomes das propriedades no código C#. Isso é especialmente útil quando os nomes das propriedades no JSON diferem dos nomes que você gostaria de usar em seu código.
