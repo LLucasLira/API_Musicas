@@ -27,7 +27,7 @@ Ponto interessante: O arquivo Json poderá ser selecionado no site: https://scre
 
 ![image](https://github.com/LLucasLira/API_Musicas/assets/84140628/dbb929bf-8381-4ae1-9ca6-cfdba2d3d3b2)
 
-![image](https://github.com/LLucasLira/API_Musicas/assets/84140628/c1f65fef-e619-4e54-b412-24f9241b5f92)
+![image](https://github.com/LLucasLira/API_Musicas/assets/84140628/f8cbd5af-c4e2-4e7a-bb88-bc652ae2bda2)
 
 Além disso, o código faz uso da anotação "JsonPropertyName" para mapear os nomes das propriedades nos objetos JSON para os nomes das propriedades no código C#. Isso é especialmente útil quando os nomes das propriedades no JSON diferem dos nomes que você gostaria de usar em seu código.
 
