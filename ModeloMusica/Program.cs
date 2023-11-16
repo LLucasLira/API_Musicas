@@ -71,3 +71,4 @@ static void MensagemConsole()
     Console.WriteLine("################################################");
     Console.WriteLine("Escolha um das opções mencionadas acima:");
 }
+static void ObterListaDeTons(List<Musica> _lstMusica)
