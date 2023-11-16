@@ -22,7 +22,8 @@ No código temos algumas funções como:
 6. **Adiciona uma música à lista de músicas favoritas.**
 7. **Exibe no console as músicas favoritas, incluindo o nome do usuário.**
 8. **Gera um arquivo JSON com o nome do usuário e a lista de músicas favoritas. O arquivo é salvo localmente, e o caminho é exibido no console.**
-
+9. **Utiliza LINQ para filtrar de acordo com a tonalidade.**
+   
 Ponto interessante: O arquivo Json poderá ser selecionado no site: https://screen-sound.vercel.app/#content e ele irá exibir a sua lista de músicas favoritas
 
 ![image](https://github.com/LLucasLira/API_Musicas/assets/84140628/dbb929bf-8381-4ae1-9ca6-cfdba2d3d3b2)
