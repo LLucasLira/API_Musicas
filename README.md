@@ -18,7 +18,17 @@ No código temos algumas funções como:
 
 5. **Filtrar músicas por estilo musical:**
    - Filtra as músicas de acordo com um estilo musical específico.
-  
+
+6. **Adiciona uma música à lista de músicas favoritas.**
+7. **Exibe no console as músicas favoritas, incluindo o nome do usuário.**
+8. **Gera um arquivo JSON com o nome do usuário e a lista de músicas favoritas. O arquivo é salvo localmente, e o caminho é exibido no console.**
+
+Ponto interessante: O arquivo Json poderá ser selecionado no site: https://screen-sound.vercel.app/#content e ele irá exibir a sua lista de músicas favoritas
+
+![image](https://github.com/LLucasLira/API_Musicas/assets/84140628/dbb929bf-8381-4ae1-9ca6-cfdba2d3d3b2)
+
+![image](https://github.com/LLucasLira/API_Musicas/assets/84140628/c1f65fef-e619-4e54-b412-24f9241b5f92)
+
 Além disso, o código faz uso da anotação "JsonPropertyName" para mapear os nomes das propriedades nos objetos JSON para os nomes das propriedades no código C#. Isso é especialmente útil quando os nomes das propriedades no JSON diferem dos nomes que você gostaria de usar em seu código.
 
 No geral, o uso do LINQ no C# oferece uma sintaxe elegante e eficaz para consultas e manipulação de dados, tornando o código mais legível, conciso e fácil de manter.
