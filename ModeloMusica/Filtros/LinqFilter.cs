@@ -37,7 +37,7 @@ namespace ModeloMusica.Filtros
                 (musica => musica.rGene!.Contains(_genero)).Select
                 (musica => musica.rArtista).Distinct().ToList();
 
-            foreach(var artist in oArtistasConformeGenero)
+            foreach (var artist in oArtistasConformeGenero)
             {
                 Console.WriteLine("Artista: " + artist + " do gênero: " + _genero);
             }
@@ -52,6 +52,18 @@ namespace ModeloMusica.Filtros
             foreach (var musica in oMusicaConformeArtista)
             {
                 Console.WriteLine("Musica: " + musica + " do artista: " + _artista);
+            }
+        }
+
+        public static void FiltrarDeAcordoComTonalidade(List<Musica> _lstMusicas, string _tonalidade)
+        {
+            var oListaMusicasDeAcordoComTonalidade = _lstMusicas
+                .Where(musica => musica.Tonalidade.Equals(_tonalidade))
+                .Select(musica => musica.rMusica)
+                .ToList();
+            foreach (var musicas in oListaMusicasDeAcordoComTonalidade)
+            {
+                Console.WriteLine($"Musica: {musicas}");
             }
         }
     }

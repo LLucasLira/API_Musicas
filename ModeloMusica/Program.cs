@@ -11,6 +11,7 @@ try
         {
             string resposta;
             string strArtistaEscolhido;
+            string strTonalidadeEscolhido;
             string strEstiloMusicalEscolhido;
 
             resposta = await httpclient.GetStringAsync("https://guilhermeonrails.github.io/api-csharp-songs/songs.json");
@@ -45,18 +46,27 @@ try
             //LinqFilter.FiltrarMusicasConformeArtista(lstMusica, strArtistaEscolhido);
 
             //7. MUSICAS PREFERIDAS
-            MusicasPreferidas musicasPreferidas;
-            musicasPreferidas = new MusicasPreferidas("Lira");
+            //MusicasPreferidas musicasPreferidas;
+            //musicasPreferidas = new MusicasPreferidas("Lira");
 
-            musicasPreferidas.addMusicasFavoritas(lstMusica[2]);
-            musicasPreferidas.addMusicasFavoritas(lstMusica[71]);
-            musicasPreferidas.addMusicasFavoritas(lstMusica[139]);
-            musicasPreferidas.addMusicasFavoritas(lstMusica[583]);
-            musicasPreferidas.addMusicasFavoritas(lstMusica[938]);
+            //musicasPreferidas.addMusicasFavoritas(lstMusica[2]);
+            //musicasPreferidas.addMusicasFavoritas(lstMusica[71]);
+            //musicasPreferidas.addMusicasFavoritas(lstMusica[139]);
+            //musicasPreferidas.addMusicasFavoritas(lstMusica[583]);
+            //musicasPreferidas.addMusicasFavoritas(lstMusica[938]);
 
-            musicasPreferidas.ExibirMusicasFavoritas();
+            //musicasPreferidas.ExibirMusicasFavoritas();
 
-            musicasPreferidas.GeraArquivoJson();
+            //musicasPreferidas.GeraArquivoJson();
+
+            //8. DESAFIO 1
+            //lstMusica[0].ExibirDetalhesDaMusica();
+
+            //8. DESAFIO 2
+            MensagemConsole();
+            strTonalidadeEscolhido = Console.ReadLine()!;
+            LinqFilter.FiltrarDeAcordoComTonalidade(lstMusica, strTonalidadeEscolhido);
+
 
         }
     }
@@ -71,4 +81,3 @@ static void MensagemConsole()
     Console.WriteLine("################################################");
     Console.WriteLine("Escolha um das opções mencionadas acima:");
 }
-static void ObterListaDeTons(List<Musica> _lstMusica)
